@@ -21,9 +21,15 @@ int Part1Scoring(string opponentChoice, string myChoice)
     var myChoiceScore = 0;
     switch (myChoice)
     {
-        case "X": myChoiceScore += 1; break;
-        case "Y": myChoiceScore += 2; break;
-        case "Z": myChoiceScore += 3; break;
+        case "X":
+            myChoiceScore += 1;
+            break;
+        case "Y":
+            myChoiceScore += 2;
+            break;
+        case "Z":
+            myChoiceScore += 3;
+            break;
     }
 
     // Score on the outcome of the round. 
@@ -34,27 +40,45 @@ int Part1Scoring(string opponentChoice, string myChoice)
         case "A":
             switch (myChoice)
             {
-                case "X": opponentChoiceScore += 3; break;
-                case "Y": opponentChoiceScore += 6; break;
-                case "Z": opponentChoiceScore += 0; break;
+                case "X":
+                    opponentChoiceScore += 3;
+                    break;
+                case "Y":
+                    opponentChoiceScore += 6;
+                    break;
+                case "Z":
+                    opponentChoiceScore += 0;
+                    break;
             }
 
             break;
         case "B":
             switch (myChoice)
             {
-                case "X": opponentChoiceScore += 0; break;
-                case "Y": opponentChoiceScore += 3; break;
-                case "Z": opponentChoiceScore += 6; break;
+                case "X":
+                    opponentChoiceScore += 0;
+                    break;
+                case "Y":
+                    opponentChoiceScore += 3;
+                    break;
+                case "Z":
+                    opponentChoiceScore += 6;
+                    break;
             }
 
             break;
         case "C":
             switch (myChoice)
             {
-                case "X": opponentChoiceScore += 6; break;
-                case "Y": opponentChoiceScore += 0; break;
-                case "Z": opponentChoiceScore += 3; break;
+                case "X":
+                    opponentChoiceScore += 6;
+                    break;
+                case "Y":
+                    opponentChoiceScore += 0;
+                    break;
+                case "Z":
+                    opponentChoiceScore += 3;
+                    break;
             }
 
             break;
@@ -66,7 +90,7 @@ int Part1Scoring(string opponentChoice, string myChoice)
 int Part2Scoring(string opponentChoice, string myDirective)
 {
     var myChoice = GetChoiceFromDirective(opponentChoice, myDirective);
-    
+
     return Part1Scoring(opponentChoice, myChoice);
 }
 
