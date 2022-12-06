@@ -1,8 +1,7 @@
-﻿
-var elfCalories = new List<int>();
+﻿var elfCalories = new List<int>();
 var currentCalorie = 0;
-foreach (var line in File.ReadLines("input.txt")){
-    
+foreach (var line in File.ReadLines("input.txt"))
+{
     if (string.IsNullOrEmpty(line))
     {
         elfCalories.Add(currentCalorie);
@@ -37,7 +36,6 @@ Console.WriteLine(elfCalories.OrderByDescending(x => x).Take(3).Sum()); // Part 
 // }
 //
 // Console.WriteLine(highest);
-
 
 
 // ----------------------------
