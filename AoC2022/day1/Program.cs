@@ -12,7 +12,7 @@ foreach (var line in File.ReadLines("input.txt"))
     currentCalorie += Convert.ToInt32(line);
 }
 
-// Console.WriteLine(elfCalories.MaxBy(x => x)); // Part 1
+//Console.WriteLine(elfCalories.MaxBy(x => x)); // Part 1
 Console.WriteLine(elfCalories.OrderByDescending(x => x).Take(3).Sum()); // Part 2
 
 // ----------------------------

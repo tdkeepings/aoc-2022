@@ -5,7 +5,7 @@ foreach (var line in File.ReadLines("input.txt"))
 {
     // Part 2
     lineCounter++;
-    
+
     lineGroup[lineCounter - 1] = line;
     if (lineCounter % 3 == 0)
     {
@@ -14,15 +14,15 @@ foreach (var line in File.ReadLines("input.txt"))
         totalScore += GetScoreForChar(character);
         lineCounter = 0;
     }
-    
+
     // Part 1 
-    // var halfway = line.Length / 2;
-    // var compartmentOne = line.Substring(0, halfway);
-    // var compartmentTwo = line.Substring(halfway, halfway);
-    //
-    // var character = FindCharInBoth(compartmentOne, compartmentTwo);
-    // var score = GetScoreForChar(character);
-    // totalScore += score;
+    //var halfway = line.Length / 2;
+    //var compartmentOne = line.Substring(0, halfway);
+    //var compartmentTwo = line.Substring(halfway, halfway);
+
+    //var character = FindCharInBoth(compartmentOne, compartmentTwo);
+    //var score = GetScoreForChar(character);
+    //totalScore += score;
 }
 
 Console.WriteLine(totalScore);
